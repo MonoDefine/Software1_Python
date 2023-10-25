@@ -33,16 +33,41 @@ numSum = numOne + numTwo + numThree
 
 numProduct = numOne * numTwo * numThree
 
-numAverage = float(numProduct / 3)
+numAverage = float(numSum / 3)
 
 print(f'Sum of numbers: {numSum}')
 print(f'Product of numbers: {numProduct}')
-print(f'Average of numbers: {numSum:.0f}')
+print(f'Average of numbers: {numAverage:.0f}')
 
 # Task 5
+talents = float(input("Enter talents: "))
+pounds = float(input("Enter pounds: "))
+lots = float(input("Enter lots: "))
 
-# One talent is 20 pounds
-# One pound is 32 lots
-# One lot is 13.3 grams
+total_lots = (talents * 20 * 32) + (pounds * 32) + lots
 
-# Convert to kilos and grams
+total_grams = total_lots * 13.3
+
+kilograms = total_grams // 1000
+
+grams = total_grams - (kilograms * 1000)
+
+print("The weight in modern units: ")
+print(f"{kilograms:.0f}kg and {grams:.2f}g")
+
+# Task 6
+import random
+
+three_digit = str(random.randint(0, 9))
+three_digit += str(random.randint(0, 9))
+three_digit += str(random.randint(0, 9))
+
+
+print(f"Three Digit Code: {three_digit}")
+
+four_digit = str(random.randint(1, 6))
+four_digit += str(random.randint(1, 6))
+four_digit += str(random.randint(1, 6))
+four_digit += str(random.randint(1, 6))
+
+print(f"Four Digit Code: {four_digit}")
