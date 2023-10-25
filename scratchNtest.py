@@ -1,16 +1,17 @@
-# Software 1 Scratch File
-import random
+username = "python"
+password = "rules"
+x = 0
+while True:
+    u_user = input("Username: ")
+    u_pass = input("Password: ")
 
-three_digit = str(random.randint(0, 9))
-three_digit += str(random.randint(0, 9))
-three_digit += str(random.randint(0, 9))
+    if u_user == username and u_pass == password:
+        print("Welcome")
+        break
+    else:
+        print("Incorrect information.")
+        x += 1
 
-
-print(f"Three Digit Code: {three_digit}")
-
-four_digit = str(random.randint(1, 6))
-four_digit += str(random.randint(1, 6))
-four_digit += str(random.randint(1, 6))
-four_digit += str(random.randint(1, 6))
-
-print(f"Four Digit Code: {four_digit}")
+    if x == 5:
+        print("Access Denied.")
+        break

@@ -66,4 +66,16 @@ else:
     print("Invalid input! Try again.")
 
 # Task 4
+uYear = int(input("Please provide a year: "))
 
+if (uYear % 4) == 0:
+    if (uYear % 100) == 0:
+        if (uYear % 400) == 0:
+            print(f"{uYear} is a leap year.")
+        else:
+            print(f"{uYear} is NOT a leap year.")
+    else:
+        print(f"{uYear} is a leap year.")
+
+else:
+    print(f"{uYear} is NOT a leap year.")
